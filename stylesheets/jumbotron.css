@@ -1,5 +1,12 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
+html {
+  min-height: 100%;
+}
+
 body {
   padding-top: 50px;
   padding-bottom: 20px;
+	background: linear-gradient(to bottom, #000000, white );
+	font-family: Helevtica, Arial, sans-serif;
+
 }
