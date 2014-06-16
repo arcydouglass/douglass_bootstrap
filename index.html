@@ -80,45 +80,75 @@
       </div>
 
       <section id="section1">
-        <a href="http://breezeapp.herokuapp.com/"><h3>Breeze</h3></a>
+        <a href="http://breezeapp.herokuapp.com/" target="_blank"><h3>Breeze</h3></a>
         <p class="projectDescription">For our final project in the Full Stack Javascript Class, I was part of a team that developed a web app that we called Breeze.  Breeze provides current wind conditions for ten of the best kite surfing locations in the Columbia River Gorge. We access data from the third party API Forecast.io with our server, load the data into Orchestrate and display the data to the client's browser by integrating Backbone and D3.  All of the site navigation is handled locally with Backbone routes.  The 48 hour wind forecast chart was rendered in D3.</p>
+        <a href="#BreezeModal" data-toggle="modal" data-target="#BreezeModal">Click To Learn More </button>
+        <p></p>
         <a href="https://github.com/dailyCupOfJavaScript/breeze">Github Link</a>
         <p></p>
         <a href="https://trello.com/b/QVll7HKc/dailycupjavascript"> Project Overview on Trello Link</a>
         <p></p>
-        <a href="http://breezeapp.herokuapp.com/"><img src="images/Breeze1.jpg" alt="Breeze app screenshot"/></a>
+        <a href="http://breezeapp.herokuapp.com/" target="_blank"><img src="images/Breeze1.jpg" alt="Breeze app screenshot"/></a>
         <p></p>
-        <a href="http://breezeapp.herokuapp.com/"><img src="images/Breeze2.jpg" alt="Breeze app screenshot"/></a>
+        <a href="http://breezeapp.herokuapp.com/" target="_blank"><img src="images/Breeze2.jpg" alt="Breeze app screenshot"/></a>
         <p></p>
       </section>
+
+
+       <div class="modal fade" id="BreezeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel">Breeze App</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Breeze is based on simple idea:  What is the best place to kite surfing in the Columbia River Gorge now and in the future?  Our solution was to identify the ten most popular kite surfing span over 40 miles from The Dalles to Rooster Rocks.  After converting these locations, to lattitude and longitude coordinates our Node Express make queries to a third party API called Forecast.io. </p>
+
+                  <p>Under our free plan for Orchestrate, Forecast only allows us to make a thousand calls per day. Our solution was to have our server store the current weather data in a database.  The database that we are using for this project is Orchestrate.io.  Orchestrate stores all of the weather data so that even if we were to get a million hits we would still not exceed the Forecast limits. Our server will update Orchestrate with the current weather conditions every 10 minutes during the day and every hour at night.</p>
+
+                  <p>On the front end, our project is organized using Backbone.  Backbone is a MV* frameworks that allows us to organize the weather data according to models, collections and views.  Each page is a separate route so that the browser does not have to go back to the server for more data.  All of the data for all of the views are downloaded all at once. Each route organizes and displays the data in a unique view.</p>
+
+                  <p>Our main view is called the Table View which is a table that is sorted and color coded according the highest winds.  The next view is called the location view which provides more detailed information about a specific location.  The final view is a detailed view of a specific location that also includes both a weekly and a 48 hour forecast.  The hourly forecast includes a D3 chart that allows the user to see how the wind will rise and fall over the next two days.</p>
+                  <p></p> 
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
       <section id="section2">
-        <a href="http://arcydouglass.github.io/d3_wf_donut"><h3>D3 Word Frequency Chart</h3></a>
+        <a href="http://arcydouglass.github.io/d3_wf_donut" target="_blank"><h3>D3 Word Frequency Chart</h3></a>
         <p class="projectDescription">An experiment in counting and charting the keywords of Milton's text Paradise Lost.  The words are displayed in a donut using the the pie layout from the D3.</p>
-        <a href="https://github.com/arcydouglass/d3_bubble">Github Link</a>
+        <a href="https://github.com/arcydouglass/d3_bubble" target="_blank">Github Link</a>
         <p></p>
-        <a href="http://arcydouglass.github.io/d3_wf_donut"><img src="images/d3_pieChart.png" alt="D3 pie chart screenshot"/></a>
+        <a href="http://arcydouglass.github.io/d3_wf_donut" target="_blank"><img src="images/d3_pieChart.png" alt="D3 pie chart screenshot"/></a>
         <p></p>
       </section>
 
 
-       <section id="section3">
-        <a href="http://arcydouglass.github.io/massage"><h3>Blueprint for Balance</h3></a>
-        <p class="projectDescription">This project was an assignment for the Portland Code School Primer Class. The purpose of the project was for our team to learn the basics of HTML, CSS and Git.  </p>
-        <a href="https://github.com/arcydouglass/massage">Github Link</a>
+      <section id="section3">
+        <a href="http://arcydouglass.github.io/arcDrawingSite/" target="_blank"><h3>SVG Experiment</h3></a>
+        <p class="projectDescription">This project was an experiment to incorporate SVG elements into a web page. The arcs are generated according to an algorithm that assigns a location based on an external source like the digits of pi or a random number generator.   </p>
+        <a href="https://github.com/arcydouglass/arcDrawingSite" target="_blank">Github Link</a>
         <p></p>
-        <a href="http://arcydouglass.github.io/massage"><img src="images/Blueprint.jpg" alt="Blueprint for Balance screenshot"/></a>
+        <a href="http://arcydouglass.github.io/arcDrawingSite/" target="_blank"><img src="images/arcDrawingSite.jpg" alt="Arc Drawing screenshot"/></a>
         <p></p>
       </section>
+
 
        <section id="section4">
-            <a href="http://arcydouglass.github.io/arcDrawingSite/" target="_blank"><h3>SVG Experiment</h3></a>
-            <p class="projectDescription">This project was an experiment to incorporate SVG elements into a web page. The arcs are generated according to an algorithm that assigns a location based on an external source like the digits of pi or a random number generator.   </p>
-            <a href="https://github.com/arcydouglass/arcDrawingSite" target="_blank">Github Link</a>
-            <p></p>
-            <a href="http://arcydouglass.github.io/arcDrawingSite/" target="_blank"><img src="images/arcDrawingSite.jpg" alt="Arc Drawing screenshot"/></a>
-            <p></p>
+        <a href="http://arcydouglass.github.io/massage" target="_blank"><h3>Blueprint for Balance</h3></a>
+        <p class="projectDescription">This project was an assignment for the Portland Code School Primer Class. The purpose of the project was for our team to learn the basics of HTML, CSS and Git.  </p>
+        <a href="https://github.com/arcydouglass/massage" target="_blank">Github Link</a>
+        <p></p>
+        <a href="http://arcydouglass.github.io/massage" target="_blank"><img src="images/Blueprint.jpg" alt="Blueprint for Balance screenshot"/></a>
+        <p></p>
       </section>
+
+    
 
       <footer>
         <p>&copy; Arcy Douglass 2014</p>
